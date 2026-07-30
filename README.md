@@ -10,6 +10,26 @@ The solution also includes incremental data processing, schema validation, schem
 
 
 
+## Business Problem
+
+WanderBricks is a vacation rental platform that generates data from users, hosts, properties, bookings, and payments. As the business grows, transactional data becomes scattered across multiple tables, making reporting and analytics increasingly complex.
+
+Business teams need quick access to insights such as monthly revenue, booking trends, host performance, payment success rate, and property utilization. Querying raw operational data directly is inefficient, difficult to maintain, and does not scale as data volume increases.
+
+This project addresses these challenges by building an end-to-end Data Engineering pipeline using the Medallion Architecture. The solution ingests raw data, performs data quality validation, supports incremental processing, preserves historical changes with SCD Type 2, and transforms the data into analytics-ready Gold tables optimized for business reporting.
+
+
+## Business Value
+
+- Centralized raw operational data into a scalable analytics platform.
+- Reduced the complexity of reporting by creating business-ready Gold tables.
+- Enabled efficient incremental data processing using Delta Lake MERGE.
+- Preserved historical changes using SCD Type 2.
+- Improved analytical query performance using OPTIMIZE, ZORDER, and VACUUM.
+- Provided a Star Schema for efficient SQL analytics and dashboarding.
+
+
+
 ## 🛠️ Technology Stack
 
 | Category | Technologies |
@@ -73,7 +93,7 @@ The Bronze Layer is responsible for ingesting raw WanderBricks data into Delta L
 - Metadata-driven ingestion framework
 - Full Load & Incremental Load
 - Watermark-based processing
-- Schema Validation
+- Schema Validation  (### Schema Handling Validates incoming source schema against the existing Bronze table. Detects missing columns and data type changes before   loading data.Supports automatic addition of new columns using Delta Lake `mergeSchema`.)
 - Schema Evolution
 - Audit Logging
 - Delta Lake storage
