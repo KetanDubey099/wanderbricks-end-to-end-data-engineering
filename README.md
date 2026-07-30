@@ -93,7 +93,7 @@ The Bronze Layer is responsible for ingesting raw WanderBricks data into Delta L
 - Metadata-driven ingestion framework
 - Full Load & Incremental Load
 - Watermark-based processing
-- Schema Validation  (### Schema Handling Validates incoming source schema against the existing Bronze table. Detects missing columns and data type changes before   loading data.Supports automatic addition of new columns using Delta Lake `mergeSchema`.)
+- Schema Validation  (Schema Handling Validates incoming source schema against the existing Bronze table. Detects missing columns and data type changes before   loading data.Supports automatic addition of new columns using Delta Lake `mergeSchema`.)
 - Schema Evolution
 - Audit Logging
 - Delta Lake storage
