@@ -100,7 +100,7 @@ Audit Log Update
 
 ### Screenshot
 
-![Bronze Layer](screenshots/bronze_tables.png)
+![Bronze Layer](screenshots/bronze_table.png)
 
 ## 🥈 Silver Layer
 
@@ -139,7 +139,7 @@ Silver Delta Tables
 
 ### Screenshot
 
-![Silver Layer](screenshots/silver_tables.png)
+![Silver Layer](screenshots/silver_table.png)
 
 
 ## 🥇 Gold Layer
@@ -197,7 +197,7 @@ These optimizations reduce file fragmentation, improve data skipping, and enhanc
 
 ### Screenshot
 
-![Gold Layer](screenshots/gold_tables.png)
+![Gold Layer](screenshots/gold_table.png)
 
 
 ## ⚡ Performance Benchmark
